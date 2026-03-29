@@ -34,7 +34,7 @@
     <section id="about" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
         <div class="relative mb-8">
             <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-blue-500/20 p-1">
-                <img src="https://via.placeholder.com/150" alt="Shahid Ashfaq" class="w-full h-full rounded-full object-cover shadow-2xl">
+                <img src="shahid.png" alt="Shahid Ashfaq" class="w-full h-full rounded-full object-cover shadow-2xl">
             </div>
             <div class="absolute -bottom-2 -right-2 bg-green-500 w-6 h-6 rounded-full border-4 border-[#0b0f1a] shadow-lg"></div>
         </div>
@@ -47,12 +47,23 @@
         <p class="max-w-2xl text-slate-400 text-lg md:text-xl mb-10 leading-relaxed">
             Highly motivated Web Developer with a <span class="text-white font-bold">GPA of 3.24</span>. Specializing in secure backend systems with <span class="laravel-red font-bold">Laravel</span> and custom <span class="wp-blue font-bold">WordPress</span> solutions.
         </p>
-        <div class="flex flex-wrap gap-4 justify-center">
-            <a href="#contact" class="bg-white text-black px-8 py-4 rounded-2xl font-bold transition-all hover:bg-blue-500 hover:text-white">Start a Project</a>
-            <div class="glass-card px-8 py-4 rounded-2xl font-bold border border-white/10 flex items-center gap-2">
-                <span class="text-blue-400">●</span> BSIT - 5th Semester
-            </div>
-        </div>
+       <div class="flex flex-wrap gap-4 justify-center items-center">
+    <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold transition-all hover:bg-blue-700 shadow-lg shadow-blue-500/20 flex items-center gap-2">
+        <span>Start a Project</span>
+    </a>
+
+    <a href="resume.pdf" download class="bg-white text-black px-8 py-4 rounded-2xl font-bold transition-all hover:bg-slate-200 flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="Group 12 10l-4 4m0 0l-4-4m4 4V3m4 13a4 4 0 01-8 0" />
+        </svg>
+        <span>Download CV</span>
+    </a>
+
+    <!-- <div class="glass-card px-8 py-4 rounded-2xl font-bold border border-white/10 flex items-center gap-2">
+        <span class="text-blue-400 animate-pulse">●</span> 
+        <span class="text-sm">BSIT - 5th Semester</span>
+    </div> -->
+</div>
     </section>
 
     <!-- Experience -->
@@ -82,7 +93,52 @@
             </div>
         </div>
     </section>
-
+    <!-- education section  -->
+     <section class="py-24 px-6 bg-blue-600/5">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center italic">Education & Qualifications</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-3xl">
+                    <h4 class="text-blue-400 font-bold mb-1">BS Information Technology</h4>
+                    <p class="text-white font-bold">Oxford College</p>
+                    <p class="text-slate-500 text-sm mt-2">5th Semester (Ongoing) • GPA: 3.24</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl">
+                    <h4 class="text-blue-400 font-bold mb-1">Intermediate (ICS)</h4>
+                    <p class="text-white font-bold">Ideal Group of Colleges</p>
+                    <p class="text-slate-500 text-sm mt-2">Completed 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Technical Stack -->
+    <section class="py-24 bg-slate-900/20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold mb-16 italic">Technical Proficiency</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="glass-card p-8 rounded-3xl border border-white/5 card-hover">
+                    <div class="text-blue-400 text-3xl mb-4">🐘</div>
+                    <div class="font-bold text-white mb-1">Laravel & PHP</div>
+                    <div class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">MVC Backend</div>
+                </div>
+                <div class="glass-card p-8 rounded-3xl border border-white/5 card-hover">
+                    <div class="text-blue-400 text-3xl mb-4">🎨</div>
+                    <div class="font-bold text-white mb-1">WordPress</div>
+                    <div class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">CMS Expert</div>
+                </div>
+                <div class="glass-card p-8 rounded-3xl border border-white/5 card-hover">
+                    <div class="text-blue-400 text-3xl mb-4">🛢️</div>
+                    <div class="font-bold text-white mb-1">MySQL / DB</div>
+                    <div class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Relational Data</div>
+                </div>
+                <div class="glass-card p-8 rounded-3xl border border-white/5 card-hover">
+                    <div class="text-blue-400 text-3xl mb-4">⚙️</div>
+                    <div class="font-bold text-white mb-1">APIs / Git</div>
+                    <div class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Infrastructure</div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Projects Section -->
     <section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
         <div class="flex justify-between items-end mb-16">
@@ -206,7 +262,7 @@
                     </div>
                 </div>
 
-                <form action="send_email.php" method="POST" class="space-y-4">
+                <form action="https://formspree.io/f/mzdkdpag" method="POST" class="space-y-4">
                     <input type="text" name="name" placeholder="Name" required class="w-full bg-slate-900 border border-white/5 rounded-2xl px-6 py-4 focus:border-blue-500 outline-none transition">
                     <input type="email" name="email" placeholder="Email Address" required class="w-full bg-slate-900 border border-white/5 rounded-2xl px-6 py-4 focus:border-blue-500 outline-none transition">
                     <textarea name="message" rows="4" placeholder="How can I help you?" required class="w-full bg-slate-900 border border-white/5 rounded-2xl px-6 py-4 focus:border-blue-500 outline-none transition"></textarea>
